@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Obesity Prediction</string>
+
+    <string name="dataset_features_description">
+        <![CDATA[
+        Dataset ini mencakup beberapa fitur kunci yang esensial untuk memprediksi kategori obesitas. Berikut adalah penjelasan setiap fitur:<br/><br/>
+        &#8226; <b>Age (Usia):</b> Umur individu dalam tahun. Faktor usia seringkali berkorelasi dengan perubahan metabolisme dan gaya hidup.<br/><br/>
+        &#8226; <b>Gender (Jenis Kelamin):</b> Jenis kelamin biologis individu (Male/Female). Perbedaan fisiologis antara pria dan wanita dapat memengaruhi predisposisi obesitas.<br/><br/>
+        &#8226; <b>Height (Tinggi Badan):</b> Tinggi badan individu dalam sentimeter (cm).<br/><br/>
+        &#8226; <b>Weight (Berat Badan):</b> Berat badan individu dalam kilogram (kg).<br/><br/>
+        &#8226; <b>BMI (Body Mass Index):</b> Indeks Massa Tubuh, dihitung dari tinggi dan berat badan (<i>Berat Badan (kg) / (Tinggi Badan (m))^2</i>). Ini adalah indikator umum status berat badan.<br/><br/>
+        &#8226; <b>PhysicalActivityLevel (Tingkat Aktivitas Fisik):</b> Tingkat aktivitas fisik individu, seringkali direpresentasikan sebagai skala atau kategori (misalnya, 1=sedentary, 2=light, 3=moderate, 4=active).<br/><br/>
+        &#8226; <b>ObesityCategory (Kategori Obesitas):</b> Label target yang menunjukkan status berat badan individu berdasarkan kriteria medis (misalnya, Normal weight, Overweight, Obese). Ini adalah output yang diprediksi oleh model.<br/><br/>
+        Fitur-fitur ini dipilih karena relevansinya yang kuat dengan status berat badan dan kemampuannya untuk membantu model machine learning mengidentifikasi pola yang mengarah pada obesitas.
+        ]]>
+    </string>
+
+    <string name="dataset_statistics_description">
+        <![CDATA[
+        Dataset ini memiliki total [Jumlah Baris] entri data dan [Jumlah Kolom] fitur. Distribusi kategori obesitas adalah sebagai berikut:<br/><br/>
+        &#8226; Normal weight: [Jumlah Entri] ([Persentase]%)<br/><br/>
+        &#8226; Overweight: [Jumlah Entri] ([Persentase]%)<br/><br/>
+        &#8226; Obese: [Jumlah Entri] ([Persentase]%)<br/><br/>
+        Rentang nilai untuk beberapa fitur numerik utama adalah:<br/><br/>
+        &#8226; Usia: [Min] - [Max] tahun<br/><br/>
+        &#8226; Tinggi Badan: [Min] - [Max] cm<br/><br/>
+        &#8226; Berat Badan: [Min] - [Max] kg<br/><br/>
+        Statistik ini penting untuk memahami karakteristik dataset dan memastikan representasi yang seimbang dari berbagai kelompok berat badan.
+        ]]>
+    </string>
+</resources>

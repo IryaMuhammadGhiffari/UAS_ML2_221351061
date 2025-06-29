@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8" tools:context=".TentangActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6200EE"
+        android:elevation="4dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Kembali"
+            android:src="@drawable/back"
+            android:scaleType="centerInside"
+            app:tint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_tentang_title_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tentang Aplikasi"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toEndOf="@+id/button_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_layout"> <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"
+            android:text="Pengantar: Menjelajah Prediksi Obesitas"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obesitas adalah masalah kesehatan global yang terus meningkat, membawa berbagai risiko penyakit kronis. Memahami dan mengelola risiko obesitas menjadi sangat penting. Aplikasi 'Obesity Prediction' hadir sebagai solusi inovatif untuk memberdayakan individu dengan pengetahuan dan alat yang diperlukan untuk mengidentifikasi potensi risiko obesitas sejak dini. Aplikasi ini dibangun di atas fondasi teknologi machine learning, dirancang untuk memberikan estimasi risiko berdasarkan karakteristik unik Anda."
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"
+            android:text="Bagaimana Aplikasi Ini Bekerja?"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi 'Obesity Prediction' menggunakan model machine learning canggih yang telah dilatih dengan dataset ekstensif berisi informasi demografi, gaya hidup, kebiasaan makan, dan metrik fisik individu."
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"
+            android:text="Langkah-langkah Prediksi:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.Anda akan diminta untuk memasukkan serangkaian data personal, seperti usia, jenis kelamin, tinggi badan, berat badan, kebiasaan merokok, tingkat aktivitas fisik, konsumsi makanan cepat saji, konsumsi air, dan lain-lain. Pastikan data yang dimasukkan akurat untuk hasil terbaik.\n\n2.Data yang Anda masukkan akan diproses oleh aplikasi. Ini mungkin melibatkan normalisasi, penskalaan, atau konversi data kategorikal menjadi format numerik yang dapat dipahami oleh model machine learning.\n\n3.Data yang telah diproses kemudian akan diumpankan ke model machine learning inti. Model ini, yang mungkin berupa algoritma seperti Support Vector Machine (SVM), Random Forest, atau Neural Network, akan menganalisis pola dari data input Anda berdasarkan apa yang telah dipelajarinya dari dataset pelatihan.\n\n4.Berdasarkan analisis model, aplikasi akan menghasilkan prediksi tentang kategori obesitas Anda (misalnya, 'Berat Badan Normal', 'Kelebihan Berat Badan', 'Obesitas Tingkat I', dll.). Hasil ini disajikan dalam antarmuka yang mudah dimengerti."
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"
+            android:text="Catatan Penting:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prediksi dari aplikasi ini adalah alat bantu informasi dan bukan merupakan diagnosis medis. Selalu konsultasikan dengan profesional kesehatan untuk saran medis dan diagnosis yang akurat. Aplikasi ini dirancang untuk meningkatkan kesadaran dan mendorong gaya hidup sehat."
+            android:textSize="16sp"
+            android:textColor="#D32F2F" android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"
+            android:text="Informasi Aplikasi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Versi Aplikasi: 1.0.0"
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dikembangkan oleh: Irya Muhammad Ghffari"
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
